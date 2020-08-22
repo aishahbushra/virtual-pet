@@ -101,3 +101,27 @@ describe('constructor', () => {
       expect(myPet.fitness).toEqual(10);
     });
   });
+
+  describe('feed', () => {
+
+    it('decreases pet hunger by 3', () => {
+      const myPet = new Pet ('Gavin');
+
+      myPet.hunger = 3;
+      myPet.feed();
+
+      expect(myPet.hunger).toEqual(0);
+    });
+  });
+
+  describe('feed', () => {
+
+    it('hunger doesnt decrease past 0', () => {
+      const myPet = new Pet ('Gavin');
+
+      myPet.hunger = 2;
+      myPet.feed();
+
+      expect(myPet.hunger).toEqual(0);
+    });
+  });
