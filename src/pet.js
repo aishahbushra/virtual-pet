@@ -6,7 +6,16 @@ function Pet(name) {
   this.age = 0
   this.hunger = 0
   this.fitness = MAXIMUM_FITNESS
+
 }
+Pet.prototype.checkUp = function() {
+  if ((this.fitness) <= 3) {
+    return 'I need a walk';
+  } else {
+    return 'I feel great!';
+  }
+}
+
 Pet.prototype.growUp = function() {
     this.age += 1;
     this.hunger = this.age * 5;

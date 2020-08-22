@@ -125,3 +125,16 @@ describe('constructor', () => {
       expect(myPet.hunger).toEqual(0);
     });
   });
+
+  describe('checkUp', () => {
+
+    it('flags if walk is needed', () => {
+      const myPet = new Pet ('Gavin');
+
+      myPet.fitness = 2;
+      myPet.checkUp();
+
+      expect(myPet.checkUp).toBe('I need a walk');
+
+    });
+  });
