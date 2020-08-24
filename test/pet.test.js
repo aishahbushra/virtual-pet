@@ -134,7 +134,48 @@ describe('constructor', () => {
       myPet.fitness = 2;
       myPet.checkUp();
 
-      expect(myPet.checkUp).toBe('I need a walk');
+      expect(myPet.checkUp()).toBe('I need a walk');
+
+    });
+  });
+
+  describe('checkUp', () => {
+
+    it('flags if pet is hungry', () => {
+      const myPet = new Pet ('Gavin');
+
+      myPet.hunger = 6;
+      myPet.checkUp();
+
+      expect(myPet.checkUp()).toBe('I am hungry');
+
+    });
+  });
+
+  describe('checkUp', () => {
+
+    it('flags if pet needs a walk and is hungry', () => {
+      const myPet = new Pet ('Gavin');
+
+      myPet.hunger = 6;
+      myPet.fitness = 2;
+      myPet.checkUp();
+
+      expect(myPet.checkUp()).toBe('I am hungry AND I need a walk');
+
+    });
+  });
+
+  describe('checkUp', () => {
+
+    it('flags if pet is all fine', () => {
+      const myPet = new Pet ('Gavin');
+
+      myPet.hunger = 2;
+      myPet.fitness = 8;
+      myPet.checkUp();
+
+      expect(myPet.checkUp()).toBe('I feel great!');
 
     });
   });

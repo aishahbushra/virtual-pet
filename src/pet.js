@@ -9,12 +9,18 @@ function Pet(name) {
 
 }
 Pet.prototype.checkUp = function() {
-  if ((this.fitness) <= 3) {
+  if (((this.fitness) <= 3) && ((this.hunger) >= 5)) {
+    return 'I am hungry AND I need a walk';
+  } if ((this.fitness) <= 3) {
     return 'I need a walk';
-  } else {
+  } else if ((this.hunger) >= 5) {
+    return 'I am hungry';
+  } else if (((this.fitness) > 3) && ((this.hunger) < 5)) {
     return 'I feel great!';
   }
 }
+
+
 
 Pet.prototype.growUp = function() {
     this.age += 1;
