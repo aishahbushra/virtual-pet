@@ -1,19 +1,15 @@
-Creating a virtual pet with Javascript.
-Should include the following:
-
-
-You can give them a name
+This is my Javascript pet, named Gavin!
 
 They can get older
 
 As they get older, they get hungrier and less fit
 
-You can walk your pet to increase it's fitness. 🏃‍♂️
+I can walk Gavin to increase it's fitness. 🏃‍♂️
 
-You can feed your pet to decrease it's hunger. 🍕
+I can feed Gavin to decrease it's hunger. 🍕
 
-You can talk to your pet to see if it needs feeding or walking
+I can can talk to Gavin to see if it needs feeding or walking
 
-If your pet gets too hungry or unfit, it will DIE 💀
+If Gavin gets too hungry or unfit, it will DIE 💀
 
-If your pet gets to 30 days old it will DIE 😢
+If Gavin gets to 30 days old it will DIE 😢
